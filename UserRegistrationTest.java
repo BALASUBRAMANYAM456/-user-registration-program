@@ -48,25 +48,25 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstNameExpectedAsTrue() {
-        boolean actualOutput = userRegistration.firstNameValidation("Manoj");
+        boolean actualOutput = userRegistration.firstNameValidation("Bala");
         assertEquals(true, actualOutput);
     }
 
     @Test
     public void givenFirstNameExpectedAsFalse() {
-        boolean actualOutput = userRegistration.firstNameValidation("manoj");
+        boolean actualOutput = userRegistration.firstNameValidation("bala");
         assertEquals(false, actualOutput);
     }
 
     @Test
     public void givenLastNameExpectedAsTrue() {
-        boolean actualOutput = userRegistration.lastNameValidation("Pabbisetty");
+        boolean actualOutput = userRegistration.lastNameValidation("Sighakolli");
         assertEquals(true, actualOutput);
     }
 
     @Test
     public void givenLastNameExpectedAsFalse() {
-        boolean actualOutput = userRegistration.lastNameValidation("pabbisetty");
+        boolean actualOutput = userRegistration.lastNameValidation("sighakolli");
         assertEquals(false, actualOutput);
     }
 
@@ -90,13 +90,13 @@ public class UserRegistrationTest {
 
     @Test
     public void givenPasswordExpectedAsTrue() {
-        boolean actualOutput = userRegistration.userPasswordValidation("Manoj@451");
+        boolean actualOutput = userRegistration.userPasswordValidation("Bala@451");
         assertEquals(true, actualOutput);
     }
 
     @Test
     public void givenPasswordExpectedAsFalse() {
-        boolean actualOutput = userRegistration.userPasswordValidation("manoj451");
+        boolean actualOutput = userRegistration.userPasswordValidation("bala451");
         assertEquals(false, actualOutput);
     }
 }
