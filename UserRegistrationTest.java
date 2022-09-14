@@ -16,7 +16,7 @@ public class UserRegistrationTest {
 
     @Test
     public void givenFirstNameExpectedAsFalse() {
-        boolean actualOutput = userRegistration.firstNameValidation("Bala");
+        boolean actualOutput = userRegistration.firstNameValidation("bala");
         assertEquals(false, actualOutput);
     }
 
@@ -28,7 +28,7 @@ public class UserRegistrationTest {
 
     @Test
     public void givenLastNameExpectedAsFalse() {
-        boolean actualOutput = userRegistration.lastNameValidation("Sighakolli");
+        boolean actualOutput = userRegistration.lastNameValidation("sighakolli");
         assertEquals(false, actualOutput);
     }
 
