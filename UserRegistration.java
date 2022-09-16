@@ -19,7 +19,7 @@ public class UserRegistration {
     public static void firstNameValidation() {
         System.out.println("Enter the First Name starting letter should be capital ");
         String firstName = scanner.nextLine();            //talking input from the user
-        String firstNameRegex = "[A-z][a-z]{2,}";         //regex validation
+        String firstNameRegex = "[A-z][a-z]{3,}";         //regex validation
         Pattern pattern = Pattern.compile(firstNameRegex);  //compiling
         Matcher matcher = pattern.matcher(firstName);       //matching
         System.out.println("First Name pattern matching : " + matcher.matches());    //printing
